@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <style>
+        form{
+float: left;
+margin-left:10px;
+}
+    </style>
+  </head>
+  <body>
+    <h1>Space flight management app</h1>
+    <p>Manage Tourists database:</p>
+    <form action="http://localhost:3000/tourists" method="get">
+        <input type="submit" value="List of Tourists" 
+             name="Submit" id="submit1" />
+            </form>
+    <form action="http://localhost:3000/newtourist" method="get">
+        <input type="submit" value="Add Tourist" 
+                name="Submit" id="submit2" />
+    </form>
+    <form action="http://localhost:3000/delete" method="get">
+        <input type="submit" value="Remove" 
+                name="Submit" id="submit3" />
+    </form>
+    <form action="http://localhost:3000/addTouristFlight" method="get">
+        <input type="submit" value="Add" 
+                name="Submit" id="submit4" />
+    </form>
+    <form action="http://localhost:3000/removeTouristFlight" method="get">
+        <input type="submit" value="Remove" 
+                name="Submit" id="submit5" />
+    </form>
+    <br>
+    <p>Manage Flights database:</p>
+    <form action="http://localhost:3000/flights" method="get">
+        <input type="submit" value="List of Flights" 
+             name="Submit" id="submit11" />
+            </form>
+    <form action="http://localhost:3000/newflight" method="get">
+        <input type="submit" value="Add Flight" 
+                name="Submit" id="submit22" />
+    </form>
+    <form action="http://localhost:3000/deleteflight" method="get">
+        <input type="submit" value="Remove" 
+                name="Submit" id="submit33" />
+    </form>
+    <form action="http://localhost:3000/addTouristFlight" method="get">
+        <input type="submit" value="Add" 
+                name="Submit" id="submit44" />
+    </form>
+    <form action="http://localhost:3000/removeTouristFlight" method="get">
+        <input type="submit" value="Remove" 
+                name="Submit" id="submit55" />
+    </form>
+    <br>
+    <br>
+    <br>
+    <div>Im using a non-sql database called mongodb.
+        <br>
+        I made a short film to show You the functionalities.
+        <br>
+        Sorry for the poor quality of interface. Due to  end-of-term exams in the university I had no time to prepare anything in bootstrap.
+    </div>
+    <div>
+        I didn`t make List of tourists in 'Flights' database cause it`s waste of memory ( it can be easily done using mongodb functions).
+        <br>
+
+    </div>
+  </body>
+</html>

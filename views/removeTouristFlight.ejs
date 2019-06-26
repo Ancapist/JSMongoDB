@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Add Tourist to a Flight</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <form id="formRemoveTouristFlight" name="removetouristflight" method="post" action="/removeTouristFlight">
+      <input id="TouristID" type="text" placeholder="TouristID" name="TouristID" />
+      <input id="Name" type="text" placeholder="Name" name="Name" />
+      <input id="Surname" type="text" placeholder="Surname" name="Surname" />
+      <input id="Flight" type="text" placeholder="Flight to add" name="List" />
+      <button id="btnSubmit" type="submit">Remove flight</button>
+    </form>
+  </body>
+</html>

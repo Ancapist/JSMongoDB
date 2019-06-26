@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>List of Tourists</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <style>
+            table, th, td {
+              border: 1px solid black;
+              border-collapse: collapse;
+
+            }
+            </style>
+  </head>
+  <body>
+    <h1>List of Tourists</h1>
+    <table style="width:70%">
+        <tr>
+            <th>TouristID</th>
+            <th>Name</th>
+            <th>Surname</th>
+            <th>Sex</th>
+            <th>Country</th>
+            <th>Notes</th>
+            <th>Birthdate</th>
+            <th>FlightIDs</th>
+        </tr>
+      <%
+        var list = '';
+        for (i = 0; i < tourists.length; i++) {
+          list += '<tr><td>' + tourists[i].TouristID +'</td><td>'+ tourists[i].Name+'</td><td>'+ tourists[i].Surname+'</td><td>'
+              + tourists[i].Sex+'</td><td>'+ tourists[i].Country+'</td><td>'+ tourists[i].Notes+ '</td><td>'+ tourists[i].Birthdate+ 
+                    '</td><td>'+ tourists[i].FlightIDs+    '</td></tr>';
+          
+        }
+      %>
+      <%- list %>
+    </table>
+  </body>
+</html>

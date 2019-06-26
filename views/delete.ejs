@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Delete Tourist from the database</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <form id="formAddUser" name="del" method="post" action="/del">
+      <input id="TouristID" type="text" placeholder="TouristID" name="TouristID" />
+      <input id="Name" type="text" placeholder="Name" name="Name" />
+      <input id="Surname" type="text" placeholder="Surname" name="Surname" />
+      <button id="btnSubmit" type="submit">Delete</button>
+    </form>
+  </body>
+</html>

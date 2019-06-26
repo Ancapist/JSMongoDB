@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Add Flight</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <form  id="formAddTourist" name="addflight" method="post" action="/addflight">
+      <input id="inputID" type="text" placeholder="FlightID" name="FlightID" />
+      <input id="inputDateIn" type="text" placeholder="DateIn" name="DateIn" />
+      <input id="inputDateOut" type="text" placeholder="DateOut" name="DateOut" />
+      <input id="inputCapacity" type="text" placeholder="Capacity" name="Capacity" />
+      <input id="inputTouristsIn" type="text" placeholder="TouristsIn" name="TouristsIn" />
+      <input id="inputPrice" type="text" placeholder="Price" name="Price" />
+      <button id="btnSubmit" type="submit">Submit</button>
+    </form>
+  </body>
+</html>

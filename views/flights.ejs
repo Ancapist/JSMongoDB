@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>List of Flights</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <style>
+            table, th, td {
+              border: 1px solid black;
+              border-collapse: collapse;
+
+            }
+            </style>
+  </head>
+  <body>
+    <h1>List of Flights</h1>
+    <table style="width:70%">
+        <tr>
+            <th>FlightID</th>
+            <th>Date In</th>
+            <th>Date Out</th>
+            <th>Capacity</th>
+            <th>Tourists In</th>
+            <th>Price</th>
+        </tr>
+      <%
+        var list = '';
+        for (i = 0; i < flights.length; i++) {
+          list += '<tr><td>' + flights[i].FlightID +'</td><td>'+ flights[i].DateIn+'</td><td>'+ flights[i].DateOut+'</td><td>'
+              + flights[i].Capacity+'</td><td>'+ flights[i].TouristsIn+'</td><td>'+ flights[i].Price+'</td></tr>';
+          
+        }
+      %>
+      <%- list %>
+    </table>
+  </body>
+</html>
