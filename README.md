@@ -8,4 +8,4 @@ TO DO:
 -instead of one remove/add option, better idea is to hide it and after clicking on a tourist in the tourist list show it (using ajax for example)
 -in list of flights toursits the column name is TouristID and its components are not TouristsIDs- but to do it correctly i had to use promises 
 
-PS: I couldnt sent whole program here, so I ve just uploaded most interesting files in here. To see how it works I ve also made a short video.
+PS: I couldnt sent whole program here, so I ve made a zip file that needs to be unzipped.
